@@ -1,4 +1,9 @@
 # SubtitleLLM
+
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![OpenAI Whisper](https://img.shields.io/badge/OpenAI-Whisper-green.svg)](https://github.com/openai/whisper)
+
+
 An intelligent automatic video subtitle generation system that combines OpenAI Whisper speech recognition with LLM correction for high-quality subtitle creation.
 
 ## Features
@@ -6,8 +11,6 @@ An intelligent automatic video subtitle generation system that combines OpenAI W
 - **Automatic Audio Extraction**: Extract audio from various video formats (MP4, AVI, MOV, MKV, WMV, FLV)
 - **Speech Recognition**: Convert speech to text using OpenAI Whisper models
 - **AI-Powered Correction**: Improve transcription accuracy using LLM correction (OpenAI GPT or Google Gemini)
-- **Multiple Output Formats**: Generate SRT subtitle files with proper timing
-- **Multi-language Support**: Support for various languages with automatic detection
 - **Flexible Configuration**: Customizable settings for different use cases
 - **Command Line Interface**: Easy-to-use CLI with extensive options
 
@@ -36,7 +39,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.11+
 - FFmpeg (for audio processing)
 - GPU support recommended for larger Whisper models
 
@@ -166,10 +169,15 @@ subtitleLLM/
 
 ## License
 
-This project is licensed under the terms specified in the LICENSE file.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Future Work
+
+- **Additional Output Formats**: Support for VTT, ASS, and other subtitle formats
+- **GUI Interface**: Development of a graphical user interface for easier operation
+- **Batch Processing**: Support for processing multiple video files simultaneously
+
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
-
-
